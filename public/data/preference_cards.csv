@@ -1,0 +1,96 @@
+﻿Specialty,Surgeon,Procedure,SKU,Suture,Quantity
+,,,,,
+Vascular,Gaffey,Resident Pig Lab,8301H,7-0 Prolene BV-1 18 in,3
+Vascular,Gaffey,Resident Pig Lab,8702H,7-0 Prolene BV-1 24 in,3
+Vascular,Gaffey,Resident Pig Lab,8806H,6-0 Prolene BV-1 18 in,3
+Vascular,Gaffey,Resident Pig Lab,8805H,6-0 Prolene BV-1 24 in,3
+Vascular,Gaffey,Resident Pig Lab,EP8718H,6-0 Prolene C1 18 in,3
+Vascular,Gaffey,Resident Pig Lab,M8726,6-0 Prolene C1 24 in,3
+Vascular,Gaffey,Resident Pig Lab,9702H,5-0 Prolene BV-1 18 in,3
+Vascular,Gaffey,Resident Pig Lab,9702H,5-0 Prolene BV-1 24 in,3
+Vascular,Gaffey,Resident Pig Lab,8717H,5-0 Prolene C1 18 in,3
+Vascular,Gaffey,Resident Pig Lab,8725H,5-0 Prolene C1 24 in,3
+Vascular,Gaffey,Resident Pig Lab,8519H,4-0 Prolene C1 18 in,3
+Vascular,Gaffey,Resident Pig Lab,D8631,4-0 Prolene C1 24 in,3
+,,,,,
+Trauma,Berndtson,ATOM Porcine | Bladder laceration,J316H,3-0 Vicryl SH,2
+Trauma,Berndtson,ATOM Porcine | Bladder laceration,K832H,3-0 Silk SH,2
+Trauma,Berndtson,ATOM Porcine | Bowel resection and ligation,K832H,"3-0, 4-0 Silk SH, TLC",2
+Trauma,Berndtson,ATOM Porcine | Dissection of renal artery and vein,A185H,2-0 Silk Ties & Vessel Loops,2
+Trauma,Berndtson,ATOM Porcine | Renal laceration repair,J269H,2-0 Vicryl CT-2,2
+Trauma,Berndtson,ATOM Porcine | Renal laceration repair,D7398,5-0 Vicryl RB-1 & Pledgets,2
+Trauma,Berndtson,ATOM Porcine | Ureter transection,D7398,5-0 Vicryl RB-1,2
+Trauma,Berndtson,ATOM Porcine | Pyloric exclusion,8424H,0 Prolene CT-1 30 in,2
+Trauma,Berndtson,ATOM Porcine | Pyloric exclusion,8411H,2-0 Prolene CT-2 30 in,2
+Trauma,Berndtson,ATOM Porcine | Diaphragm laceration,8424H,0 Prolene CT-1,2
+Trauma,Berndtson,ATOM Porcine | Diaphragm laceration,8411H,2-0 Prolene CT-2,2
+Trauma,Berndtson,ATOM Porcine | Splenorrhaphy,VCP417H,2-0 Vicryl SH & Pledgets,2
+Trauma,Berndtson,ATOM Porcine | Splenectomy,K832H,3-0 Silk SH,2
+Trauma,Berndtson,ATOM Porcine | Pancreas,8832H,"3-0 Prolene SH, TLC",2
+Trauma,Berndtson,ATOM Porcine | Gastrotomy,VCP316H,"3-0 Vicryl SH, TLC & TLS",2
+Trauma,Berndtson,ATOM Porcine | Cardiac injury,8842H,"3-0 Prolene MH, Foley Catheter, Felt Pledgets",2
+Trauma,Berndtson,ATOM Porcine | Cardiac injury,PXW35,Proximate Skin Stapler,2
+Trauma,Berndtson,ATOM Porcine | IVC repair,8890H,5-0 Prolene C-1,2
+Trauma,Berndtson,ATOM Porcine | Hepatic laceration,47T,0 Chromic Gut BP-1,2
+,,,,,
+General Surgery,Hollandsworth,Resident Pig Lab,C012D,2-0 Silk SH,2
+General Surgery,Hollandsworth,Resident Pig Lab,K832H,3-0 Silk SH,2
+General Surgery,Hollandsworth,Resident Pig Lab,D8876,2-0 Vicryl SH,2
+General Surgery,Hollandsworth,Resident Pig Lab,J316H,3-0 Vicryl SH,2
+General Surgery,Hollandsworth,Resident Pig Lab,SXMP1B408,2-0 Stratafix SH 6 in,2
+General Surgery,Hollandsworth,Resident Pig Lab,SXMP1B409,2-0 Stratafix SH 9 in,2
+General Surgery,Hollandsworth,Resident Pig Lab,SXPP1B420,3-0 Stratafix SH 6 in,2
+General Surgery,Hollandsworth,Resident Pig Lab,SXPP1B453,3-0 Stratafix SH 9 in,2
+,,,,,
+Vascular,Getinge,Endoscopic Vessel Harvesting,SA74H,3-0 Silk Ties,2
+Vascular,Getinge,Endoscopic Vessel Harvesting,8832H,3-0 Prolene SH,4
+,,,,,
+ENT,Inspire,Cadaver Airway Implantation,SA76G,0 Silk Ties 24in,2
+ENT,Inspire,Cadaver Airway Implantation,8862H,3-0 Prolene BB 24 in,2
+ENT,Inspire,Cadaver Airway Implantation,8833H,2-0 Prolene SH 36 in,2
+,,,,,
+Anesthesiology,Rahman,Cricothyrotomy,PDP317H,2-0 PDS SH,2
+Anesthesiology,Rahman,Cricothyrotomy,J316H,3-0 Vicryl SH,2
+,,,,,
+Lap Box,FLS,FLS Test/Practice,LOTID: 20211111,2-0 Wego-Silk braided 75 cm Taper Point 26 mm 1/2 needle,2
+Lap Box,FLS,FLS Test/Practice,LOTID: 221018ENH,2-0 RT-ED 2-0 Silk braided 90 cm 1/2 circle taper point 26 mm,2
+Lap Box,FLS,FLS Test/Practice,LOTID: 210529,2-0 Sim Vivo Silk black braided 100 cm 1/2 circle rounded body 26 mm needle,2
+,,,,,
+PACE,Sandler,PACE FLS,SK262026B0P,2-0 DemeSILK,3
+,,,,,
+Lap Box,UCSD SOM,Lap Box Practice,X524H,0 Ethibond SH 36 in,20
+Lap Box,UCSD SOM,Lap Box Practice,D8552,2-0 Silk SH 30 in,20
+,,,,,
+Trauma,Berndtson,Resident Pig Trauma,SA66G,0 Silk Tie 18 in,1
+Trauma,Berndtson,Resident Pig Trauma,SA76G,0 Silk Tie 24 in,1
+Trauma,Berndtson,Resident Pig Trauma,SA86G,0 Silk Tie 30 in,1
+Trauma,Berndtson,Resident Pig Trauma,SA6H,0 Silk Tie 60 in,1
+Trauma,Berndtson,Resident Pig Trauma,SA65H,2-0 Silk Tie 18 in,1
+Trauma,Berndtson,Resident Pig Trauma,SA75H,2-0 Silk Tie 24 in,1
+Trauma,Berndtson,Resident Pig Trauma,SA85H,2-0 Silk Tie 30 in,1
+Trauma,Berndtson,Resident Pig Trauma,SA5H,2-0 Silk Tie 60 in,1
+Trauma,Berndtson,Resident Pig Trauma,SA64H,3-0 Silk Tie 18 in,1
+Trauma,Berndtson,Resident Pig Trauma,SA74H,3-0 Silk Tie 24 in,1
+Trauma,Berndtson,Resident Pig Trauma,SA84H,3-0 Silk Tie 30 in,1
+Trauma,Berndtson,Resident Pig Trauma,J646H,0 Vicryl Tie 18 in,1
+Trauma,Berndtson,Resident Pig Trauma,D8003,0 Vicryl Tie 24 in,1
+Trauma,Berndtson,Resident Pig Trauma,D8156,0 Vicryl Tie 36 in,1
+Trauma,Berndtson,Resident Pig Trauma,J905T,2-0 Vicryl Tie 18 in,1
+Trauma,Berndtson,Resident Pig Trauma,D7823,2-0 Vicryl Tie 24 in,1
+Trauma,Berndtson,Resident Pig Trauma,D8976,2-0 Vicryl Tie 36 in,1
+Trauma,Berndtson,Resident Pig Trauma,J910T,3-0 Vicryl Tie 18 in,1
+Trauma,Berndtson,Resident Pig Trauma,D7818,3-0 Vicryl Tie 27 in,1
+Trauma,Berndtson,Resident Pig Trauma,J614H,3-0 Vicryl Tie 54 in,1
+Trauma,Berndtson,Resident Pig Trauma,47T,0 Chromic Gut BP-1,1
+Trauma,Berndtson,Resident Pig Trauma,8842H,3-0 Prolene MH,1
+Trauma,Berndtson,Resident Pig Trauma,K834H,0 Silk SH,1
+Trauma,Berndtson,Resident Pig Trauma,C012D,2-0 Silk SH,1
+Trauma,Berndtson,Resident Pig Trauma,C013D,3-0 Silk SH,1
+Trauma,Berndtson,Resident Pig Trauma,V318H,0 Vicryl SH,1
+Trauma,Berndtson,Resident Pig Trauma,J417H,2-0 Vicryl SH,1
+Trauma,Berndtson,Resident Pig Trauma,J316H,3-0 Vicryl SH,1
+Trauma,Berndtson,Resident Pig Trauma,Z317,2-0 PDS SH,1
+Trauma,Berndtson,Resident Pig Trauma,D6264,3-0 PDS SH,1
+Trauma,Berndtson,Resident Pig Trauma,Z315H,4-0 PDS SH,1
+Trauma,Berndtson,Resident Pig Trauma,8834H,0 Prolene SH 26 in,1
+Trauma,Berndtson,Resident Pig Trauma,8833H,2-0 Prolene SH 26 in,1
