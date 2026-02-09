@@ -21,6 +21,16 @@ Open http://localhost:3000
 ## Data
 Update: `public/data/preference_cards.csv`
 
+## Updating Preference Cards (CSV-only)
+
+1. Edit `public/data/preference_cards.csv`
+2. Save as CSV (do not rename the file or change headers)
+3. Commit + push:
+   ```bash
+   git add public/data/preference_cards.csv
+   git commit -m "Update suture preference cards"
+   git push
+
 Expected columns (flexible):
 - Specialty
 - Surgeon
