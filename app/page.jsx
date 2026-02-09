@@ -59,7 +59,11 @@ export default function HomePage() {
         <p className="subtitle">Select a surgical specialty</p>
 
         <div style={{ marginTop: 10, display: "flex", gap: 10, flexWrap: "wrap", justifyContent: "center" }}>
-          <span className="pill">{offline ? "Offline mode" : "Online"}</span>
+          <span className="pill">
+            <span className={`statusDot ${offline ? "offline" : "online"}`} />
+            {offline ? "Offline" : "Online"}
+          </span>
+
           <span className="pill">
             Last updated: {lastUpdated ? formatLastUpdated(lastUpdated) : "(not available)"}
           </span>

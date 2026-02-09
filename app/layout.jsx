@@ -1,4 +1,6 @@
 import "./globals.css";
+import pkg from "../package.json";
+import LogoBar from "./components/LogoBar";
 
 export const metadata = {
   title: "Suture Preference Cards",
@@ -17,18 +19,19 @@ export default function RootLayout({ children }) {
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
       </head>
+
       <body>
         <div className="shell">
-          <div style={{ display: "flex", justifyContent: "center", margin: "16px 0 8px" }}>
-            <img
-              src="/ucsd-logo.jpg"
-              alt="UC San Diego School of Medicine – Center for the Future of Surgery"
-              style={{ maxWidth: "420px", width: "100%", height: "auto" }}
-            />
-          </div>
+          {/* Long-press UCSD logo to force refresh (staff-only gesture) */}
+          <LogoBar />
+
           {children}
+
+          {/* Version badge (reads package.json version) */}
+          <div className="versionBadge">v{pkg.version}</div>
         </div>
       </body>
     </html>
   );
 }
+
