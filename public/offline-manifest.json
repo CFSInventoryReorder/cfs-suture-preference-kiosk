@@ -1,0 +1,146 @@
+[
+  {
+    "url": "/",
+    "revision": null
+  },
+  {
+    "url": "/card/anesthesiology_rahman_cricothyrotomy",
+    "revision": null
+  },
+  {
+    "url": "/card/ent_inspire_cadaver_airway_implantation",
+    "revision": null
+  },
+  {
+    "url": "/card/general_surgery_hollandsworth_resident_pig_lab",
+    "revision": null
+  },
+  {
+    "url": "/card/lap_box_fls_fls_test_practice",
+    "revision": null
+  },
+  {
+    "url": "/card/lap_box_ucsd_som_lap_box_practice",
+    "revision": null
+  },
+  {
+    "url": "/card/pace_sandler_pace_fls",
+    "revision": null
+  },
+  {
+    "url": "/card/trauma_berndtson_atom_porcine_bladder_laceration",
+    "revision": null
+  },
+  {
+    "url": "/card/trauma_berndtson_atom_porcine_bowel_resection_and_ligation",
+    "revision": null
+  },
+  {
+    "url": "/card/trauma_berndtson_atom_porcine_cardiac_injury",
+    "revision": null
+  },
+  {
+    "url": "/card/trauma_berndtson_atom_porcine_diaphragm_laceration",
+    "revision": null
+  },
+  {
+    "url": "/card/trauma_berndtson_atom_porcine_dissection_of_renal_artery_and_vein",
+    "revision": null
+  },
+  {
+    "url": "/card/trauma_berndtson_atom_porcine_gastrotomy",
+    "revision": null
+  },
+  {
+    "url": "/card/trauma_berndtson_atom_porcine_hepatic_laceration",
+    "revision": null
+  },
+  {
+    "url": "/card/trauma_berndtson_atom_porcine_ivc_repair",
+    "revision": null
+  },
+  {
+    "url": "/card/trauma_berndtson_atom_porcine_pancreas",
+    "revision": null
+  },
+  {
+    "url": "/card/trauma_berndtson_atom_porcine_pyloric_exclusion",
+    "revision": null
+  },
+  {
+    "url": "/card/trauma_berndtson_atom_porcine_renal_laceration_repair",
+    "revision": null
+  },
+  {
+    "url": "/card/trauma_berndtson_atom_porcine_splenectomy",
+    "revision": null
+  },
+  {
+    "url": "/card/trauma_berndtson_atom_porcine_splenorrhaphy",
+    "revision": null
+  },
+  {
+    "url": "/card/trauma_berndtson_atom_porcine_ureter_transection",
+    "revision": null
+  },
+  {
+    "url": "/card/trauma_berndtson_resident_pig_trauma",
+    "revision": null
+  },
+  {
+    "url": "/card/vascular_gaffey_resident_pig_lab",
+    "revision": null
+  },
+  {
+    "url": "/card/vascular_getinge_endoscopic_vessel_harvesting",
+    "revision": null
+  },
+  {
+    "url": "/data/preference_cards.csv",
+    "revision": null
+  },
+  {
+    "url": "/icons/icon-192.png",
+    "revision": null
+  },
+  {
+    "url": "/icons/icon-512.png",
+    "revision": null
+  },
+  {
+    "url": "/manifest.json",
+    "revision": null
+  },
+  {
+    "url": "/specialty/Anesthesiology",
+    "revision": null
+  },
+  {
+    "url": "/specialty/ENT",
+    "revision": null
+  },
+  {
+    "url": "/specialty/General%20Surgery",
+    "revision": null
+  },
+  {
+    "url": "/specialty/Lap%20Box",
+    "revision": null
+  },
+  {
+    "url": "/specialty/PACE",
+    "revision": null
+  },
+  {
+    "url": "/specialty/Trauma",
+    "revision": null
+  },
+  {
+    "url": "/specialty/Vascular",
+    "revision": null
+  },
+  {
+    "url": "/ucsd-logo.jpg",
+    "revision": null
+  }
+]

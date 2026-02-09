@@ -58,10 +58,10 @@ export default function HomePage() {
         <h1 className="title">Suture Preference Cards</h1>
         <p className="subtitle">Select a surgical specialty</p>
 
-        <div style={{ marginTop: 10, display: "flex", gap: 10, flexWrap: "wrap" }}>
+        <div style={{ marginTop: 10, display: "flex", gap: 10, flexWrap: "wrap", justifyContent: "center" }}>
           <span className="pill">{offline ? "Offline mode" : "Online"}</span>
           <span className="pill">
-            Last updated: {lastUpdated ? formatLastUpdated(lastUpdated) : "(not provided by host)"}
+            Last updated: {lastUpdated ? formatLastUpdated(lastUpdated) : "(not available)"}
           </span>
         </div>
       </header>
@@ -85,18 +85,15 @@ export default function HomePage() {
         )}
 
         {!status.loading && !status.error && (
-          <div className="list">
+          <div className="gridSpecialty">
             {filtered.map((s) => (
               <button
                 key={s.name}
-                className="btnCard"
+                className="btnCard btnSpecialty"
                 onClick={() => router.push(`/specialty/${encodeURIComponent(s.name)}`)}
               >
-                <div className="nameRow">
+                <div className="nameRow" style={{ justifyContent: "center" }}>
                   <span className="surgeon">{s.name}</span>
-                </div>
-                <div style={{ marginTop: 8 }}>
-                  <span className="pill">{s.cards.length} cards</span>
                 </div>
               </button>
             ))}
