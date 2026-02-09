@@ -59,36 +59,48 @@ export default function CardPage() {
   return (
     <>
       <header className="header">
-        <div className="topRow" style={{ justifyContent: "center" }}>
-          <div>
-            <h1 className="title" style={{ marginBottom: 2, fontSize: 32 }}>
-              {card ? `${card.surgeon} — ${card.procedure}` : "Preference Card"}
-            </h1>
-            <p className="subtitle">{card ? card.specialty : " "}</p>
-            <div style={{ marginTop: 10, display: "flex", gap: 10, flexWrap: "wrap" }}>
-              <span className="pill">{offline ? "Offline mode" : "Online"}</span>
-              <span className="pill">
-                Last updated: {lastUpdated ? formatLastUpdated(lastUpdated) : "(not provided by host)"}
-              </span>
-            </div>
-          </div>
-          <button
-            className="btnCard"
-            onClick={() => router.push("/")}
-            style={{ width: "auto", padding: "12px 14px" }}
-          >
-            ← Home
-          </button>
+        <h1 className="title" style={{ fontSize: 32 }}>
+          {card ? `${card.surgeon} — ${card.procedure}` : "Preference Card"}
+        </h1>
+        <p className="subtitle">{card ? card.specialty : " "}</p>
+
+        <div style={{ marginTop: 10, display: "flex", gap: 10, flexWrap: "wrap", justifyContent: "center" }}>
+          {/* If you have statusDot CSS, this will show the dot; otherwise it still displays text fine */}
+          <span className="pill">
+            <span className={`statusDot ${offline ? "offline" : "online"}`} />
+            {offline ? "Offline" : "Online"}
+          </span>
+
+          <span className="pill">
+            Last updated: {lastUpdated ? formatLastUpdated(lastUpdated) : "(not available)"}
+          </span>
         </div>
       </header>
 
       <section className="panel">
+        {/* Back + Home row */}
+        <div className="backRow">
+          <button className="btnBack" onClick={() => router.back()}>
+            ← Back
+          </button>
+
+          <button
+            className="btnBack"
+            onClick={() => router.push("/")}
+            style={{ marginLeft: "auto" }}
+          >
+            Home
+          </button>
+        </div>
+
         {status.loading && <p className="subtitle">Loading…</p>}
+
         {status.error && (
           <p className="subtitle" style={{ color: "#b91c1c", fontWeight: 800 }}>
             {status.error}
           </p>
         )}
+
         {!status.loading && !status.error && !card && (
           <p className="subtitle">Card not found. Return Home and reselect.</p>
         )}

@@ -9,9 +9,9 @@ import { formatLastUpdated } from "../../../lib/formatDateTime";
 export default function SpecialtyPage() {
   const router = useRouter();
   const params = useParams();
-  const name = decodeURIComponent(params?.name || "");
+  const specialtyName = decodeURIComponent(params?.name || "");
 
-  const [cards, setCards] = useState([]);
+  const [specialty, setSpecialty] = useState(null);
   const [status, setStatus] = useState({ loading: true, error: "" });
   const [query, setQuery] = useState("");
   const [lastUpdated, setLastUpdated] = useState(null);
@@ -32,8 +32,12 @@ export default function SpecialtyPage() {
     loadData()
       .then((data) => {
         if (!mounted) return;
-        const found = data.find((d) => d.name === name);
-        setCards(found ? found.cards : []);
+        const found = data.find((s) => s.name === specialtyName);
+        if (!found) {
+          setStatus({ loading: false, error: "Specialty not found." });
+          return;
+        }
+        setSpecialty(found);
         setStatus({ loading: false, error: "" });
       })
       .catch((err) => {
@@ -48,39 +52,53 @@ export default function SpecialtyPage() {
       window.removeEventListener("online", syncOnlineState);
       window.removeEventListener("offline", syncOnlineState);
     };
-  }, [name]);
+  }, [specialtyName]);
 
-  const filtered = useMemo(() => {
+  const filteredCards = useMemo(() => {
+    if (!specialty) return [];
     const q = query.trim().toLowerCase();
-    if (!q) return cards;
-    return cards.filter((c) => `${c.surgeon} ${c.procedure}`.toLowerCase().includes(q));
-  }, [cards, query]);
+    if (!q) return specialty.cards;
+
+    return specialty.cards.filter((c) =>
+      `${c.surgeon} ${c.procedure}`.toLowerCase().includes(q)
+    );
+  }, [specialty, query]);
 
   return (
     <>
       <header className="header">
-        <div className="topRow" style={{ justifyContent: "center" }}>
-          <div>
-            <h1 className="title" style={{ marginBottom: 2, fontSize: 32 }}>{name}</h1>
-            <p className="subtitle">Select surgeon and procedure</p>
-            <div style={{ marginTop: 10, display: "flex", gap: 10, flexWrap: "wrap" }}>
-              <span className="pill">{offline ? "Offline mode" : "Online"}</span>
-              <span className="pill">
-                Last updated: {lastUpdated ? formatLastUpdated(lastUpdated) : "(not provided by host)"}
-              </span>
-            </div>
-          </div>
-          <button
-            className="btnCard"
-            onClick={() => router.push("/")}
-            style={{ width: "auto", padding: "12px 14px" }}
-          >
-            ← Back
-          </button>
+        <h1 className="title">{specialtyName}</h1>
+        <p className="subtitle">Select surgeon and procedure</p>
+
+        <div
+          style={{
+            marginTop: 10,
+            display: "flex",
+            gap: 10,
+            flexWrap: "wrap",
+            justifyContent: "center",
+          }}
+        >
+          <span className="pill">
+            <span className={`statusDot ${offline ? "offline" : "online"}`} />
+            {offline ? "Offline" : "Online"}
+          </span>
+
+          <span className="pill">
+            Last updated: {lastUpdated ? formatLastUpdated(lastUpdated) : "(not available)"}
+          </span>
         </div>
       </header>
 
       <section className="panel">
+        {/* Back navigation */}
+        <div className="backRow">
+          <button className="btnBack" onClick={() => router.back()}>
+            ← Back
+          </button>
+        </div>
+
+        {/* Search */}
         <div className="searchRow">
           <input
             className="search"
@@ -92,6 +110,7 @@ export default function SpecialtyPage() {
         </div>
 
         {status.loading && <p className="subtitle">Loading…</p>}
+
         {status.error && (
           <p className="subtitle" style={{ color: "#b91c1c", fontWeight: 800 }}>
             {status.error}
@@ -100,18 +119,22 @@ export default function SpecialtyPage() {
 
         {!status.loading && !status.error && (
           <div className="list">
-            {filtered.map((c) => (
-              <button key={c.id} className="btnCard" onClick={() => router.push(`/card/${c.id}`)}>
+            {filteredCards.map((c) => (
+              <button
+                key={c.id}
+                className="btnCard"
+                onClick={() => router.push(`/card/${c.id}`)}
+              >
                 <div className="nameRow">
                   <span className="surgeon">{c.surgeon}</span>
-                  <span className="lab"> | {c.procedure}</span>
-                </div>
-                <div style={{ marginTop: 8 }}>
-                  <span className="pill">{c.items.length} items</span>
+                  <span className="procedure">{c.procedure}</span>
                 </div>
               </button>
             ))}
-            {filtered.length === 0 && <p className="subtitle">No matches. Try a different search.</p>}
+
+            {filteredCards.length === 0 && (
+              <p className="subtitle">No matches. Try a different search.</p>
+            )}
           </div>
         )}
       </section>
