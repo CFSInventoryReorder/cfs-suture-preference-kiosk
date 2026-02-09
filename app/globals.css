@@ -87,6 +87,39 @@ input{
   gap: 10px;
 }
 
+/* Specialty Selection grid — kiosk-safe */
+.gridSpecialty {
+  display: grid;
+  gap: 12px;
+}
+
+/* Default: desktop & large screens */
+@media (min-width: 1024px) {
+  .gridSpecialty {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* iPad landscape */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .gridSpecialty {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* iPad portrait */
+@media (max-width: 767px) {
+  .gridSpecialty {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.btnSpecialty {
+  padding: 12px 10px;
+  min-height: 56px;
+  text-align: center;
+}
+
 .btnCard{
   width: 100%;
   text-align: left;
