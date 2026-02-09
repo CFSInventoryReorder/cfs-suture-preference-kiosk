@@ -241,3 +241,37 @@ tbody tr:last-child td{ border-bottom: none; }
   .title{ font-size: 38px; }
   .list{ grid-template-columns: 1fr 1fr; }
 }
+
+/* ================================
+   Final touches – status + version
+   ================================ */
+
+/* Offline / Online dot inside pill */
+.statusDot{
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.statusDot.online{
+  background: #16a34a; /* green */
+}
+
+.statusDot.offline{
+  background: #6b7280; /* gray */
+}
+
+/* Version badge (bottom-right corner) */
+.versionBadge{
+  position: fixed;
+  right: 12px;
+  bottom: 10px;
+  font-size: 12px;
+  opacity: 0.65;
+  background: rgba(0,0,0,0.05);
+  padding: 6px 10px;
+  border-radius: 999px;
+  pointer-events: none;
+}
