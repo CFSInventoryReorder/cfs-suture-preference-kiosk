@@ -42,7 +42,8 @@ Additional UX features: - Back navigation on all pages
 
 ## Run locally
 
-npm install npm run dev
+npm install 
+npm run dev
 
 Open: http://localhost:3000
 
