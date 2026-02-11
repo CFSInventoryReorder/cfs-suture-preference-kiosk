@@ -24,19 +24,21 @@ Additional UX features: - Back navigation on all pages\
 
 ## Screenshots
 
-Place screenshots inside a `/screenshots` folder in this repository.
+## Screenshots
 
-Example structure:
+### 1. Specialty Selection
+![Specialty Selection](screenshots/01-specialty-selection.png)
 
-screenshots/ ├─ 01-specialty-selection.png ├─ 02-surgeon-procedure.png
-├─ 03-preference-card.png ├─ 04-status-indicator.png
+---
 
-Then embed them like:
+### 2. Surgeon & Procedure Selection
+![Surgeon and Procedure](screenshots/02-surgeon-procedure.png)
 
-![Specialty Selection](screenshots/01-specialty-selection.png) ![Surgeon
-and Procedure](screenshots/02-surgeon-procedure.png) ![Preference
-Card](screenshots/03-preference-card.png) ![Status
-Indicator](screenshots/04-status-indicator.png)
+---
+
+### 3. Preference Card View
+![Preference Card](screenshots/03-preference-card.png)
+
 
 ------------------------------------------------------------------------
 
